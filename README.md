@@ -1,8 +1,6 @@
 # Shell-scripting
 Project: Automated Web Application Deployment
-
-# Automated Web Application Deployment
-This project provides a shell script to automate the deployment of a simple Flask web application on an Ubuntu server. The script installs necessary packages, clones the web application from a GitHub repository, sets up a virtual environment, installs Flask, and configures Nginx to serve the application.
+# Script to deploy a simple web application on Ubuntu using Nginx
 
 ## Prerequisites
 - An Ubuntu server
@@ -21,7 +19,8 @@ This project provides a shell script to automate the deployment of a simple Flas
                                 
  PROJECT STRUCTURE
 
-automated-web-deployment/
+/automated-web-deployment/
+
 │
 ├── www/
 │   └── index.html
@@ -29,7 +28,7 @@ automated-web-deployment/
 └── README.md
 
 
-www/index.html
+#www/index.html
 
 <!DOCTYPE html>
 <html lang="en">
@@ -60,7 +59,20 @@ Create an `index.html` file with the following content:
     <p>This is a simple web page served by Nginx.</p>
 </body>
 </html>
+<<<<<<< HEAD
 e
+=======
+
+
+
+deploy_web_app.sh
+#!/bin/bash
+# Update package list and install necessary packages
+
+
+echo "Updating package list and installing necessary packages..."
+sudo apt update
+>>>>>>> 87261ee90377fe2ac0a5989d73f7e49b93d35585
 sudo apt install -y nginx git
 
 # Clone the web application from GitHub
@@ -100,9 +112,11 @@ echo "Web application deployed successfully!"
 
 
 #Make deploy_web_app.sh executable
+
 chmod +x deploy_web_app.sh
 
 
 #Run the scrpit
+
 ./deploy_web_app.sh
 
