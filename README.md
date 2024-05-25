@@ -19,7 +19,7 @@ Project: Automated Web Application Deployment
                                 
 # Project Title
 
-This is a sample project.
+Automated Web Application Deployment
 
 ## Project Structure
 
@@ -53,6 +53,9 @@ Create an `index.html` file with the following content and place it in the `www`
 
 
 
+
+
+
 Deployment Script
 Create a deploy_web_app.sh file with the following content in the root of your project directory:
 
@@ -61,9 +64,9 @@ Create a deploy_web_app.sh file with the following content in the root of your p
 # Script to deploy a simple web application on Ubuntu using Nginx
 
 # Update package list and install necessary packages
-echo "Updating package list and installing necessary packages..."
-sudo apt update
-sudo apt install -y nginx git
+ echo "Updating package list and installing necessary packages..."
+ sudo apt update
+ sudo apt install -y nginx git
 
 # Clone the web application from GitHub
 echo "Cloning the web application repository from GitHub..."
