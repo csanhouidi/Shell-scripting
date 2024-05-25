@@ -51,12 +51,8 @@ Create an `index.html` file with the following content and place it in the `www`
 </body>
 </html>
 
+Create a deployment Script called deploy_we_app.sh
 
-
-
-
-
-Deployment Script
 Create a deploy_web_app.sh file with the following content in the root of your project directory:
 
 #!/bin/bash
