@@ -36,6 +36,20 @@ www/index.html
 <head>
     <meta charset="UTF-8">
    <!DOCTYPE html>
+<h# Project Title
+
+This is a sample project.
+
+## Quick Start
+
+To deploy the application, follow the steps below.
+
+### HTML Content
+
+Create an `index.html` file with the following content:
+
+```html
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -46,20 +60,7 @@ www/index.html
     <p>This is a simple web page served by Nginx.</p>
 </body>
 </html>
-
-
-
-deploy_web_app.sh
-
-#!/bin/bash
-
-# Script to deploy a simple web application on Ubuntu using Nginx
-
-# Update package list and install necessary packages
-
-
-echo "Updating package list and installing necessary packages..."
-sudo apt update
+e
 sudo apt install -y nginx git
 
 # Clone the web application from GitHub
