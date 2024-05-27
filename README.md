@@ -1,4 +1,6 @@
-# Shell-scripting :Deploy a simple web application on Ubuntu using Nginx
+# Shell-scripting :
+
+**Automatically deploy a simple web application on Ubuntu using a shell script**
 
 ## Prerequisites
 - An Ubuntu server
@@ -12,6 +14,7 @@
    ```bash
    git clone https://github.com/csanhouidi/shell-scripting
    cd shell-scripting
+   ./deploy_web_app.sh
 
 
                                 
