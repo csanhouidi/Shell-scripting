@@ -23,6 +23,7 @@ Automated Web Application Deployment
 
 ## Project Structure
 
+```
 automated-web-deployment/
 ├── deploy_web_app.sh
 └── www/
@@ -50,28 +51,26 @@ Create an `index.html` file with the following content and place it in the `www`
     <p>This is a simple web page served by Nginx.</p>
 </body>
 </html>
-
+```
 ***
 
-# Create a shell script
+### Create a shell script
 
-Create a deploy_web_app.sh file with the following content in the root of your project directory:
+Create a `deploy_web_app.sh` to deploy a the web application on Ubuntu using Nginx:
 
-#!/bin/bash
-
-# Script to deploy a simple web application on Ubuntu using Nginx
-
-# Update package list and install necessary packages
- echo "Updating package list and installing necessary packages..."
- sudo apt update
- sudo apt install -y nginx git
-
-# Clone the web application from GitHub
+#### Update package list and install necessary packages
+``` #!/bin/bash
+  - echo "Updating package list and installing necessary packages..."  
+  - sudo apt update
+  - sudo apt install -y nginx git
+```
+#### Clone the web application from GitHub
+```
 echo "Cloning the web application repository from GitHub..."
-sudo git clone https://github.com/yourusername/automated-web-deployment.git /var/www/html/automated-web-deployment
-
-# Set up Nginx to serve the HTML file
-echo "Setting up Nginx to serve the HTML file..."
+sudo git clone https://github.com/csanhouidi/automated-web-deployment.git /var/www/html/automated-web-deployment
+```
+#### Set up Nginx to serve the HTML file
+```echo "Setting up Nginx to serve the HTML file..."
 sudo bash -c 'cat <<EOL > /etc/nginx/sites-available/simpleweb
 server {
     listen 80;
@@ -85,12 +84,12 @@ server {
     }
 }
 EOL'
-
-# Enable the new Nginx configuration
-echo "Enabling the new Nginx configuration..."
+```
+#### Enable the new Nginx configuration
+```echo "Enabling the new Nginx configuration..."
 sudo ln -s /etc/nginx/sites-available/simpleweb /etc/nginx/sites-enabled/
 sudo nginx -t
 sudo systemctl restart nginx
 
 echo "Web application deployed successfully!"
-
+```
