@@ -10,8 +10,8 @@
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/csanhouidi/automated-web-deployment
-   cd automated-web-deployment
+   git clone https://github.com/csanhouidi/shell-scripting
+   cd shell-scripting
 
 
                                 
@@ -22,7 +22,7 @@ Automated Web Application Deployment
 ## Project Structure
 
 ```
-automated-web-deployment/
+shell-scripting/
 ├── deploy_web_app.sh
 └── www/
 └── index.html
@@ -66,7 +66,7 @@ Create a `deploy_web_app.sh` to deploy a the web application on Ubuntu using Ngi
 #### Clone the web application from GitHub
 ```
 echo "Cloning the web application repository from GitHub..."
-sudo git clone https://github.com/csanhouidi/automated-web-deployment.git /var/www/html/automated-web-deployment
+sudo git clone https://github.com/csanhouidi/shell-scripting /var/www/html/shell-scripting
 ```
 #### Set up Nginx to serve the HTML file
 ```echo "Setting up Nginx to serve the HTML file..."
@@ -75,7 +75,7 @@ server {
     listen 80;
     server_name yourdomain.com;
 
-    root /var/www/html/automated-web-deployment/www;
+    root /var/www/html/shell-scripting/www;
     index index.html;
 
     location / {
