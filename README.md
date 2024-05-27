@@ -1,6 +1,4 @@
-# Shell-scripting
-Project: Automated Web Application Deployment
-# Script to deploy a simple web application on Ubuntu using Nginx
+# Shell-scripting :Deploy a simple web application on Ubuntu using Nginx
 
 ## Prerequisites
 - An Ubuntu server
@@ -34,7 +32,7 @@ automated-web-deployment/
 ## Quick Start
 
 To deploy the application, follow the steps below.
-
+```
 ### HTML Content
 
 Create an `index.html` file with the following content and place it in the `www` directory:
