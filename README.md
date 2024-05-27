@@ -10,7 +10,7 @@
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/csanhouidi/automated-web-deployment.git
+   git clone https://github.com/csanhouidi/automated-web-deployment
    cd automated-web-deployment
 
 
@@ -49,8 +49,9 @@ Create an `index.html` file with the following content and place it in the `www`
     <p>This is a simple web page served by Nginx.</p>
 </body>
 </html>
+`
+place it in `/var/www/html/automated-web-deployment/www` for nginx to serve it
 ```
-***
 
 ### Create a shell script
 
@@ -91,3 +92,17 @@ sudo systemctl restart nginx
 
 echo "Web application deployed successfully!"
 ```
+**Make `deploy_web_app.sh` executable**
+
+```
+chmod +x deploy_we_app.sh
+```
+**Run the script**
+
+```
+./deploy_web_app.sh
+```
+
+### **verify your deployment**
+
+*access you web application using ubuntu machine ip or domain name*
