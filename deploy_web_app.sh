@@ -28,3 +28,22 @@ EOL'
 #### Enable the new Nginx configuration
 ```echo "Enabling the new Nginx configuration..."
 sudo ln -s /etc/nginx/sites-available/simpleweb /etc/nginx/sites-enabled/
+sudo nginx -t
+sudo systemctl restart nginx
+
+echo "Web application deployed successfully!"
+```
+**Make `deploy_web_app.sh` executable**
+
+```
+chmod +x deploy_we_app.sh
+```
+**Run the script**
+
+```
+./deploy_web_app.sh
+```
+
+### **verify your deployment**
+
+*access you web application using ubuntu machine ip or domain name*
