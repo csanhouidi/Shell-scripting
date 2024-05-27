@@ -53,7 +53,7 @@ Create an `index.html` file with the following content and place it in the `www`
 </body>
 </html>
 `
-place it in `/var/www/html/automated-web-deployment/www` for nginx to serve it
+place it in `/var/www/html/shell-scripting/www` for nginx to serve it
 ```
 
 ### Create a shell script
